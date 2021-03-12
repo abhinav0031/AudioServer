@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from app.server.routes.audio import router as AudioRouter
 
 app = FastAPI()
-app.include_router(AudioRouter, tags=["Audio"], prefix="/audio")
+app.include_router(AudioRouter, tags=["Audio"], prefix="")
 
 
 @app.get("/", tags=["Root"])

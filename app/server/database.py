@@ -17,7 +17,7 @@ def song_helper(song) -> dict:
         "id": str(song["_id"]),
         "name": song["songmetadata"]["name"],
         "duration": song["songmetadata"]["duration"],
-        "uploadedtime": now,
+        "uploadedtime": song["songmetadata"]["uploadtime"],
     }
 
 
@@ -28,7 +28,7 @@ def podcast_helper(podcast) -> dict:
         "duration": podcast["podcastmetadata"]["duration"],
         "host": podcast["podcastmetadata"]["host"],
         "participants": podcast["podcastmetadata"]["participants"],
-        "uploadedtime": now,
+        "uploadedtime": podcast["podcastmetadata"]["uploadtime"],
     }
 
 
@@ -39,7 +39,7 @@ def audiobook_helper(audiobook) -> dict:
         "author": audiobook["audiobookmetadata"]["author"],
         "narrator": audiobook["audiobookmetadata"]["narrator"],
         "duration": audiobook["audiobookmetadata"]["duration"],
-        "uploadedtime": now,
+        "uploadedtime": audiobook["audiobookmetadata"]["uploadtime"],
     }
 
 

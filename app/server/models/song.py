@@ -4,13 +4,15 @@ from pydantic import BaseModel,  Field
 
 
 class SongSchema(BaseModel):
-    name: str = Field(...)
-    duration: int = Field(...)
+    name: str = Field(..., max_length=100)
+    duration: int = Field(..., ge=0)
+    uploadtime: datetime = Field(...)
 
 
 class UpdateSongModel(BaseModel):
     name: Optional[str]
     duration: Optional[int]
+    uploadtime: Optional[datetime]
 
 
 def ResponseModel(data, message):

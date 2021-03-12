@@ -13,7 +13,7 @@ from app.server.models.audiobook import (
 
 
 class AudioSchema(BaseModel):
-    type: str
+    type: str = Field(...)
     songmetadata: Optional[SongSchema] = None
     podcastmetadata: Optional[PodcastSchema] = None
     audiobookmetadata: Optional[AudiobookSchema] = None

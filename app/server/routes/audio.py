@@ -76,7 +76,7 @@ async def get_audiobyid(audioType: str, id: str):
         audio = await retrieve_audiobook(id)
         if audio:
             return ResponseModel(audio, "audio data retrieved successfully")
-    return ErrorResponseModel("An error occurred.", 404, "audio you are looking for doesn't exist.")
+    return ErrorResponseModel("An error occurred.", 400, "audio you are looking for doesn't exist.")
 
 
 @router.delete("/{audioType}/{id}", response_description="audio retrieved")
@@ -103,7 +103,7 @@ async def delete_audiobyid(audioType: str, id: str):
                     id), "Audio deleted successfully"
             )
     return ErrorResponseModel(
-        "An error occurred", 404, "Audio with id {0} doesn't exist".format(id)
+        "An error occurred", 400, "Audio with id {0} doesn't exist".format(id)
     )
 
 
@@ -136,6 +136,6 @@ async def update_audio_data(audioType: str, id: str, req: UpdateAudioModel = Bod
             )
     return ErrorResponseModel(
         "An error occurred",
-        404,
+        400,
         "There was an error updating the Audio data.",
     )
