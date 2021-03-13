@@ -107,7 +107,7 @@ async def delete_audiobyid(audioType: str, id: str):
     )
 
 
-@router.put("{audioType}/{id}")
+@router.put("/{audioType}/{id}")
 async def update_audio_data(audioType: str, id: str, req: UpdateAudioModel = Body(...)):
 
     if audioType == 'song':

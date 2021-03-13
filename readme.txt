@@ -31,4 +31,8 @@ breif summary on routes:
 
     
 
+
+One more thing: this project is linked to my account of mongodb atlas if you want to connect it to your mongodb atlas account just insert 
+your mongodb URI in database.py file (i have left comment above line where you need to insert your mongodb uri).
+
 PS: You can also check my other github projects like the ecommerce project in which i have used django REST FRAMEWORK and REACT.
