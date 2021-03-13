@@ -42,4 +42,10 @@ please enter correctly otherwise error will occur.
 One more thing: this project is linked to my account of mongodb atlas if you want to connect it to your mongodb atlas account just insert 
 your mongodb URI in database.py file (i have left comment above line where you need to insert your mongodb uri).
 
-PS: You can also check my other github projects like the ecommerce project in which i have used django REST FRAMEWORK and REACT.
+
+if still any problem occurs or server doesn't start please contact me or we can go through the project via video call and thanks again for giving me this opprtunity,
+looking forward to work with you.
+
+
+PS: You can also check my other github projects like ecommerce project in which i have used django REST FRAMEWORK and REACT.
+
